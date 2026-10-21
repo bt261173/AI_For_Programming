@@ -49,7 +49,7 @@ def main():
         gc_content = 100 * (sequence.count("G") + sequence.count("C")) / len(sequence)
         if args.min_gc is not None and gc_content <= args.min_gc:
             continue
-        print(f">{header}\t{gc_content:.3f}%")
+        print(f">{header}\t{gc_content:.4f}%")
 
 
 if __name__ == "__main__":
